@@ -1,6 +1,7 @@
 import CodeBreakerView from './components/CodeBreakerView';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Index from './components/Index';
 function App() {
 
 
@@ -12,8 +13,11 @@ function App() {
        <Router>
      
       <Switch>
-      <Route path="/">
+      <Route path="/game">
       <CodeBreakerView></CodeBreakerView>
+      </Route>
+      <Route path="/">
+        <Index></Index>
       </Route>
       </Switch>
   
