@@ -2,7 +2,7 @@
 
 import { sendAPIQgetJSON } from './infraestructureServices'
 
-const endPoint = "http://localhost:3000/api/"
+const endPoint = "http://localhost:4200/api/"
 
 export async function getResultOfNumber(guessNumber) {
     const responseJson = await sendAPIQgetJSON(endPoint+guessNumber);

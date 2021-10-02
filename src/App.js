@@ -1,6 +1,6 @@
 import CodeBreakerView from './components/CodeBreakerView';
 import './App.css';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
 
 
@@ -9,7 +9,15 @@ function App() {
 
   return (
     <div className="App">
-    <CodeBreakerView></CodeBreakerView>
+       <Router>
+     
+      <Switch>
+      <Route path="/">
+      <CodeBreakerView></CodeBreakerView>
+      </Route>
+      </Switch>
+  
+    </Router>
     </div>
   );
 }
